@@ -1,3 +1,5 @@
+package Part1_Algorithms;
+
 public class BiggerValue {
 
     public int biggerValue(int x, int y) {

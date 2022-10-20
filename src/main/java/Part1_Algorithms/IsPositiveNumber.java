@@ -1,3 +1,5 @@
+package Part1_Algorithms;
+
 public class IsPositiveNumber {
 
     public boolean isPositiveNumber(int x) {

@@ -1,3 +1,5 @@
+package Part1_Algorithms;
+
 public class AreNumbersEqual {
 
     public int areNumbersEqual(int x, int y) {

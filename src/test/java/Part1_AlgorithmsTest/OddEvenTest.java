@@ -1,3 +1,6 @@
+package Part1_AlgorithmsTest;
+
+import Part1_Algorithms.OddEven;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

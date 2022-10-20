@@ -1,3 +1,6 @@
+package Part1_AlgorithmsTest;
+
+import Part1_Algorithms.BiggerValue;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

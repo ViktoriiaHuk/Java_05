@@ -38,7 +38,7 @@ public class SumArrayTest {
     // sum  = 0
 
     @Test
-    public void  testSumArrayIsNull (){
+    public void  testSumArrayIsZero(){
 
         int [] array = {-7, 7};
         int expectedResult = 0;

@@ -53,8 +53,8 @@ public class GivenNameForIntegerMTest {
     @Test
 
     public void testGivenNameForIntegerMTes_11_9_HappyPath() {
-        int m = 99;
-        String expectedResult = "Bad Number";
+        int m = 693;
+        String expectedResult = "Good Number";
         String actualResult = new GivenNameForIntegerM().givenNameForIntegerM(m);
 
         Assert.assertEquals(actualResult, expectedResult);

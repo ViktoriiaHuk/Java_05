@@ -5,10 +5,9 @@ public class ManipulationsWithArrays {
     public int[] manipulationsWithArrays(int[] array, int number) {
 
         int[] newArray = new int[array.length];
-        int newArrayIndex = 0;
+
         for (int i = 0; i < array.length; i++) {
-            newArray[newArrayIndex] = array[i] * number;
-            newArrayIndex++;
+            newArray[i] = array[i] * number;
         }
         return newArray;
     }
@@ -16,10 +15,8 @@ public class ManipulationsWithArrays {
     public double[] toDoubleArray(int[] array) {
 
         double[] newArray = new double[array.length];
-        int newArrayIndex = 0;
         for (int i = 0; i < array.length; i++) {
-            newArray[newArrayIndex] = (double) array[i];
-            newArrayIndex++;
+            newArray[i] = (double) array[i];
         }
         return newArray;
     }
@@ -27,10 +24,8 @@ public class ManipulationsWithArrays {
     public int[] toIntArray(double[] array) {
 
         int[] newArray = new int[array.length];
-        int newArrayIndex = 0;
         for (int i = 0; i < array.length; i++) {
-            newArray[newArrayIndex] = (int) array[i];
-            newArrayIndex++;
+            newArray[i] = (int) array[i];
         }
         return newArray;
     }
@@ -38,10 +33,9 @@ public class ManipulationsWithArrays {
     public String[] toStringArrayInt(int[] array) {
 
         String[] newArray = new String[array.length];
-        int newArrayIndex = 0;
+
         for (int i = 0; i < array.length; i++) {
-            newArray[newArrayIndex] = "" + array[i];
-            newArrayIndex++;
+            newArray[i] = "" + array[i];
         }
         return newArray;
 
@@ -50,10 +44,8 @@ public class ManipulationsWithArrays {
     public String[] toStringArrayDouble(double[] array) {
 
         String[] newArray = new String[array.length];
-        int newArrayIndex = 0;
         for (int i = 0; i < array.length; i++) {
-            newArray[newArrayIndex] = "" + array[i];
-            newArrayIndex++;
+            newArray[i] = "" + array[i];
         }
         return newArray;
 
@@ -63,8 +55,8 @@ public class ManipulationsWithArrays {
 
         boolean result = false;
 
-        for (int i = 0; i < array.length ; i++) {
-            if(array[i] > number){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > number) {
                 result = true;
             } else {
                 result = false;

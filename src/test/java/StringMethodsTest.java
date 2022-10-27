@@ -355,6 +355,57 @@ public class StringMethodsTest {
 
     }
 
+    // 14.1 Positive test returnSplitArray
+    @Test
+
+    public void testReturnSplitArray_Qa() {
+        String line = "QA for Everyone";
+        String[] expectedResult = {"QA", "for", "Everyone"};
+        String[] actualResult = new StringMethods().returnSplitArray(line);
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+    }
+
+    // 14.2 Positive test returnSplitArray
+    @Test
+
+    public void testReturnSplitArray_Pyshkin() {
+        String line = "Александр Сергеевич Пушкин";
+        String[] expectedResult = {"Александр", "Сергеевич", "Пушкин"};
+        String[] actualResult = new StringMethods().returnSplitArray(line);
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+    }
+
+    // 15.1 Positive test returnFIO
+    @Test
+
+    public void testReturnFIO() {
+        String line = "Александр Сергеевич Пушкин";
+        String expectedResult = "Имя: Александр\n" +
+                                 "Отчество: Сергеевич\n" +
+                                 "Фамилия: Пушкин\n";
+        String actualResult = new StringMethods().returnFIO(line);
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+    }
+
+    // 16.1 Positive test returnWordN
+    @Test
+
+    public void testReturnWordN() {
+        String line = "one";
+        int n = 5;
+        String expectedResult = "oneoneoneoneone";
+        String actualResult = new StringMethods().returnWordN(line, n);
+
+        Assert.assertEquals(actualResult, expectedResult);
+
+    }
+
 
 
 }

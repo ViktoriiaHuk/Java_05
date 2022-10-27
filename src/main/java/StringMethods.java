@@ -205,9 +205,9 @@ public class StringMethods {
 
     public String returnDeleteBetweenIndex(String line, int index1, int index2) {
         if (line.isEmpty() == false) {
-            String result  = line.substring(0, index1 - 1) + line.substring(index2 );
-                    return result;
-                }
+            String result = line.substring(0, index1 - 1) + line.substring(index2);
+            return result;
+        }
 
         return "Строка пустая";
     }
@@ -215,11 +215,48 @@ public class StringMethods {
     /* Task 14. Напишите метод, который принимает на вход предложение и возвращает слова из этого предложения
     в виде массива слов  */
 
+    public String[] returnSplitArray(String line) {
+        if (line.isEmpty() == false) {
+            String[] result = line.split(" ");
+            return result;
+        }
+        return new String[0];
+    }
+
     /* Task 15. Написать метод, который принимает на вход предложение, которое состоит из имени, фамилии,
      отчества и возвращает текст:   */
 
+    public String returnFIO(String line) {
+        if (line.isEmpty() == false) {
+            String[] result = line.split(" ");
+            String fio = "Имя:" + " " + result[0] + "\n" + "Отчество:" + " " + result[1] +
+                    "\n" + "Фамилия:" + " " + result[2] + "\n";
+            return fio;
+        }
+        return "Строка пустая";
+    }
+
     /* Task 16.  Написать метод, который принимает на вход слово и число n,  и возвращает строку, где слово
      повторяется n раз.   */
+
+    public String returnWordN(String line, int n) {
+        if (line.isEmpty() == false && n <= 0) {
+            String result = "";
+            for (int i = 0; i < n; i++) {
+                result = result + line;
+            }
+            return result;
+        }
+        return "Строка пустая";
+    }
+
+    public String returnWordN2(String line, int n) {
+        if (line.isEmpty() == false && n <= 0) {
+
+            return line.repeat(n);
+        }
+        return "Строка пустая";
+    }
 
     /* Task 17. Напишите метод, который принимает строку и index, и возвращает численное значение буквы, которая
      находится на позиции index (использовать только один метод класса String)  */
